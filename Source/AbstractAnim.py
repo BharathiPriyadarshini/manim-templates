@@ -262,7 +262,18 @@ class AbstractAnim(Scene):
         self.play(self.logoGroup.animate.scale(0),run_time=1)
         # self.play(self.circles.animate.scale(0),lines.animate.scale(0),text.animate.scale(0),run_time=3)
         
-         
+    def GithubSourceCodeReference(self): 
+        self.colorChoice=[BLUE,ORANGE,PINK]
+        p2 = cvo.CVO().CreateCVO("SOURCE CODE REFERENCE", "").setPosition([0,2.5,0])
+        p4 = cvo.CVO().CreateCVO("Github URL", "https://github.com/Skillbanc/manim-templates").setPosition([-3.5,0,0])
+        p5 = cvo.CVO().CreateCVO("File Name", "comparingquantities.py").setPosition([4,0,0])
+        p2.cvolist.append(p4)
+        p2.cvolist.append(p5)
+        self.setNumberOfCirclePositions(3)
+        p4.setcircleradius(3)
+        p5.setcircleradius(2)
+        self.construct1(p2,p2)
+             
     def construct2(self,p10,cvoParent):  
         text0 = Tex(p10.onameList[0],color=BLUE)
         text01 = Tex(p10.onameList[0],color=BLUE)
@@ -287,7 +298,7 @@ class AbstractAnim(Scene):
            grp1.add(text01)
            text0 = text1
            # self.wait(2)
-          
+         
            
            
         self.wait(2)
