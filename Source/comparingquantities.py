@@ -42,7 +42,10 @@ class comparingquantities(AbstractAnim):
         # self.exampleci()
         # self.fadeOutCurrentScene()
         self.GithubSourceCodeReference()
-
+        
+    def SetDeveloperList(self):
+        # return super().SetDeveloperList()
+        self.DeveloperList="Bharathi"
         
     def intro(self):
          
